@@ -1,0 +1,18 @@
+Functions needed:
+	define variables
+
+
+Variable types:
+	int
+	float
+	char
+	long
+	str
+	array
+
+Keywords:
+	function names (end with brackets)
+	operators (+, -. =)
+
+
+Add paired characters to list and undo working backwards 

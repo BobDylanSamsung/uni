@@ -1,0 +1,1 @@
+print((input().__str__().__getattribute__("upper").__call__()))
