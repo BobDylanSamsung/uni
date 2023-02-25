@@ -1,0 +1,20 @@
+set a 1 2 3
+set b 1 2 -3 4 -5
+set c 20
+sum a
+sum b
+sum c
+len a
+len b
+len c
+append a 4 7 9
+push b 1 -10 4
+pop c
+list entries
+sum a
+sum b
+sum c
+len a
+len b
+len c
+bye

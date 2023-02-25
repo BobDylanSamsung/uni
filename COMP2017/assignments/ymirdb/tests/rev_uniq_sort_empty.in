@@ -1,0 +1,8 @@
+set a 1
+pop a
+get a
+sort a
+uniq a
+rev a
+get a
+bye

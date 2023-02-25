@@ -1,0 +1,11 @@
+set a 1 2 3
+set b 1 2 a 3 4
+sort b
+rev b
+uniq b
+sort c
+rev c
+uniq c
+list entries
+list keys
+bye

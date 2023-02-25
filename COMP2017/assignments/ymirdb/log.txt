@@ -1,0 +1,247 @@
+gcc -Wall -g -O0 -fsanitize=address,leak ymirdb.c
+
+currently:
+	looking at snapshots
+	bug somewhere when dealing with referecnes
+		changes the key after deleting references
+
+todo:
+	general entries
+	purge
+
+
+
+
+HIGH LEVEL FUNCS
+------------------------------------------------------------------
+
+EASY:
+	-bye
+	-help
+	-lists
+	-get
+	-pick
+	-pluck
+	-pop
+	-rev
+	-
+
+DEL:
+	check if there are any forward or backwards references
+	if there arent then delete
+	if there are raise error
+
+SET:
+	for each part of strsep
+	if length is 0 do nothing
+	if simple set val using atoi
+	if general link and set forward and backward references
+	otherwise do nothing
+
+PUSH: 
+	similar to set uses the same if statements
+	reverses order and adds to beginning
+
+APPEND:
+	similar to set but adds to end
+
+MIN, MAX, SUM LEN:
+	do the same as before but when a general element is found recurse
+
+REV, UNIQ, SORT:
+	simple only check before doing the same thing
+
+
+
+
+OLD FUNCTIONS
+------------------------------------------------------------------
+
+entry_t* entry_set(char* key, int* values, int size, database_t* db){
+	
+	//allocate memory in the heap to new entry
+	entry_t* new_entry = malloc(sizeof(entry_t));
+
+	if(NULL == new_entry){
+		//raise error
+		return NULL;
+	}
+
+	//check_valid_key(key, db);
+	strcpy(new_entry->key, key);
+
+	//assign values
+	//for each value in values, make a new element and add it to the entry
+	
+	//new_entry->head = link_elements(values, size);
+
+	new_entry->head = link_elements(values, size);
+
+
+	new_entry->length = size;
+	entry_add(db, new_entry);
+	return new_entry;
+}
+
+element_t* link_elements(int* values, int size){
+	element_t* new_element;
+	element_t* prev_element = NULL;
+	element_t* head;
+	for(int i = 0; i < size; i++){
+		new_element = malloc(sizeof(element_t));
+		if(0 == i){		//first element of entry, set head accordingly
+			head = new_element;
+		}else{
+			prev_element->next = new_element;
+		}
+		if(NULL == new_element){
+			//raise error
+			return NULL;
+		}
+		new_element->value = values[i];
+		//printf("%d: %d\n", i, new_element->value); 	//dubug
+		new_element->prev = prev_element;
+		prev_element = new_element;
+	}
+	new_element->next = NULL;
+	return head;
+}
+
+bool entry_push(char* key, int* values, int size, database_t* db){
+	//check key exists
+	entry_t* entry = retrieve_key(key, db);
+	if(NULL != entry){
+		//make new linked list with values
+		element_t* new_head = link_elements(values, size);
+		if(NULL != new_head){
+			entry->length = entry->length + size;
+		}
+		element_t* cursor = new_head;
+		while(NULL != cursor->next){
+			cursor = cursor->next;
+		}
+		entry->head->prev = cursor;
+		cursor->next = entry->head;
+		entry->head = new_head;
+		return true;
+	}else{
+		//raise error
+		return false;
+	}
+}
+
+bool entry_append(char* key, int* values, int size, database_t* db){
+	//check key exists
+	entry_t* entry = retrieve_key(key, db);
+	if(NULL != entry){
+		//make new linked list with values
+		element_t* new_head = link_elements(values, size);
+		if(NULL != new_head){
+			entry->length = entry->length + size;
+		}
+		element_t* cursor = entry->head;
+		while(NULL != cursor->next){
+			cursor = cursor->next;
+		}
+		cursor->next = new_head;
+		new_head->prev = cursor;
+		return true;
+	}else{
+		//raise error
+		return false;
+	}
+}
+
+
+/*
+ *list_forward_keys
+ *recursively finds unique keys for entry and forward references
+ *
+ *entry_t* entry:: entry to list keys of
+ *
+ *returns a key_list struct containing array of keys and size of array
+ */
+key_list_t* list_forward_keys(entry_t* entry){
+	printf("getting keys for %s\n", entry->key);
+	if(0 == entry->forward_size){
+		printf("nil");
+		return NULL;
+	}
+
+	key_list_t* key_list = malloc(sizeof(key_list_t));
+	key_list->size = 0;
+	key_list->keys = NULL;
+	for(int i = 0; i < entry->forward_size; i++){
+		
+		//check key isnt already present
+		bool unique = true;
+		int check = 0;
+		while(unique & (check < key_list->size)){
+			if(0== strcmp(entry->forward[i]->key, key_list->keys[check])){
+				unique = false;
+			}
+			check++;
+		}
+
+		//if unique add key
+		if(unique){
+			key_list->size++;
+			printf("increase size of %s keys to %d after adding %s\n", entry->key, key_list->size, entry->forward[i]->key);
+			key_list->keys = realloc(key_list->keys, key_list->size * sizeof(char*));
+			key_list->keys[i] = entry->forward[i]->key;
+		}	
+
+		//recurse for more keys
+		if(0 < entry->forward[i]->forward_size){
+			key_list_t* sub_key_list = list_forward_keys(entry->forward[i]);
+			
+			//add unique keys to key_list
+			for(int sub_count = 0; sub_count < sub_key_list->size; sub_count++){
+				//check for uniqueness
+				bool sub_unique = true;
+				int count = 0;
+				while(unique & (count < key_list->size)){
+					if(0 == strcmp(sub_key_list->keys[sub_count], key_list->keys[count])){
+						sub_unique = false;
+					}
+					count++;
+				}
+				if(sub_unique){
+					key_list->size++;
+					printf("increase size of %s keys to %d after adding %s\n", entry->key, key_list->size, sub_key_list->keys[sub_count]);
+					key_list->keys = realloc(key_list->keys, key_list->size * sizeof(char*));
+					key_list->keys[count] = sub_key_list->keys[sub_count];
+				}
+
+			}
+			free(sub_key_list->keys);
+			free(sub_key_list);
+
+		}
+	}
+	return key_list;
+}
+
+
+			entry_t* original_cursor = cursor->head;
+			entry_t* copy_cursor = db->entry_head;
+while((NULL != original_cursor) & (NULL != copy_cursor)){
+	if(!original_cursor->is_simple){
+		element_t* original_element_cursor = original_cursor->head;
+		element_t* copy_element_cursor = copy_cursor->head;
+
+		while(NULL != original_element_cursor){
+			if(original_element_cursor->type == ENTRY){
+				entry_t* reference = retrieve_key(original_element_cursor->entry->key, db);
+				copy_element_cursor->entry  = reference;
+				copy_element_cursor->type = ENTRY;
+
+				add_reference(copy_cursor, reference);
+			}
+			original_element_cursor = original_element_cursor->next;
+			copy_element_cursor = copy_element_cursor->next;
+		}
+	}
+	original_cursor = original_cursor->next;
+	copy_cursor = copy_cursor->next;
+}

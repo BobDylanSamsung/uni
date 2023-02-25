@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <assert.h>
+#include <pthread.h>
+#define WIDTH 512
+#define IDX(x, y) ((y) * WIDTH + (x))
+
+
+/**
+* Returns the matrix multiplication of a and b.
+*/
+int* naive_multiply(const int* a, const int* b) {
+int* result = calloc(WIDTH * WIDTH, sizeof(int));
+	for (size_t y = 0; y < WIDTH; y++) {
+		for (size_t x = 0; x < WIDTH; x++) {
+			for (size_t k = 0; k < WIDTH; k++) {
+				result[IDX(x, y)] += a[IDX(k, y)] * b[IDX(x, k)];
+			}
+		}
+	}
+	return result;
+}
+
+
+/**
+* Returns the matrix multiplication of a and b.
+*/
+int* multiply(const int* a, const int* b) {
+	int* result = calloc(WIDTH * WIDTH, sizeof(int));
+	for (size_t y = 0; y < WIDTH; y++) {
+		for (size_t x = 0; x < WIDTH; x++) {
+			for (size_t k = 0; k < WIDTH; k++) {
+				result[IDX(x, y)] += a[IDX(k, y)] * b[IDX(x, k)];
+			}
+		}
+	}
+	return result;
+}
+
+
+int* generate_random_matrix(void) {
+	// Ensure the width is a power of 2
+	assert(((WIDTH - 1) & WIDTH) == 0);
+	int* result = malloc(WIDTH * WIDTH * sizeof(int));
+	for (size_t y = 0; y < WIDTH; ++y)
+	{
+		for (size_t x = 0; x < WIDTH; ++x)
+		{
+			result[IDX(x, y)] = rand();
+		}
+	}
+	return result;
+}
+
+
+// Displays a matrix.
+void display(const int* matrix) {
+	for (size_t y = 0; y < WIDTH; y++) {
+		for (size_t x = 0; x < WIDTH; x++) {
+			printf("%4d ", matrix[IDX(x, y)]);
+		}
+	printf("\n");
+	}
+}
+
+
+int main(void) {
+	// Construct the matrices
+	int* a = generate_random_matrix();
+	int* b = generate_random_matrix();
+	
+	// Compute the result
+	int* r = multiply(a, b);
+	int* naive = naive_multiply(a, b);
+	for (size_t y = 0; y < WIDTH; y++) {
+		for (size_t x = 0; x < WIDTH; x++) {
+			assert(naive[IDX(x, y)] == r[IDX(x, y)]);
+		}
+	}
+	
+	puts("done");
+	free(a);
+	free(b);
+	free(r);
+	return 0;
+}

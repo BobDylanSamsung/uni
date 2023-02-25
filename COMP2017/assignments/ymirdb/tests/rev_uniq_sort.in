@@ -1,0 +1,27 @@
+set a 1 2 3 4 5
+get a
+rev a
+get a
+sort a
+get a
+push a 1 2 3 4 5
+uniq a
+get a
+uniq a
+get a
+sort a
+get a
+uniq a
+set b 2 4 1 -5 2 -1 7 -2 1 2 -1 0 0 5 -5
+list entries
+rev b
+get b
+rev b
+get b
+sort b
+get b
+uniq b
+get b
+uniq b
+list entries
+bye

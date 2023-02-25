@@ -1,0 +1,11 @@
+set a 1 2 3
+append a c
+append b    
+list entries
+append a 1
+append b 1
+list entries
+append c a
+append 1a b
+list entries
+bye

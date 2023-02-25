@@ -1,0 +1,1 @@
+./spx_exchange tests/E2E/complex_traders/products.txt tests/E2E/complex_traders/trader1 tests/E2E/complex_traders/trader2 

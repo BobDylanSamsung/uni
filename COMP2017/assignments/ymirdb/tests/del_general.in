@@ -1,0 +1,20 @@
+set a 1 2 3
+set b 1 a 3
+set c b a
+set d a b c
+set e d a c b
+list entries
+del b
+list entries
+del e
+del d
+list entries
+del a
+del b
+del c
+list entries
+del a
+del b
+del a
+list entries
+bye

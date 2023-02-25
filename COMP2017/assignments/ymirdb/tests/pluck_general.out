@@ -1,0 +1,45 @@
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+e [c a d b]
+d [a b c]
+c [a b]
+b [1 a 2]
+a [1 2 3]
+
+2
+
+a
+
+c
+
+e [c a d b]
+d [a b]
+c [b]
+b [1 a 2]
+a [1 3]
+
+d
+
+c
+
+index out of range
+
+b
+
+e [a b]
+d [a b]
+c []
+b [1 a 2]
+a [1 3]
+
+a
+
+bye

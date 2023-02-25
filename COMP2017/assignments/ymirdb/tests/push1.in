@@ -1,0 +1,5 @@
+set a 1 2 3
+get a
+push a 4 5 6
+get a
+bye

@@ -1,0 +1,67 @@
+ok
+
+ok
+
+saved as snapshot 1
+
+ok
+
+saved as snapshot 2
+
+ok
+
+saved as snapshot 3
+
+3
+2
+1
+
+nil
+
+a
+
+a, b
+
+b, c
+
+c
+
+nil
+
+ok
+
+nil
+
+a
+
+no such key
+
+b
+
+nil
+
+no such key
+
+ok
+
+b [1 a 2]
+a [4 5 6]
+
+2
+1
+
+ok
+
+b [1 a 2]
+a [1 2 3]
+
+1
+
+ok
+
+saved as snapshot 2
+
+2
+1
+
+bye

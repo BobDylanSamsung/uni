@@ -1,0 +1,18 @@
+> ok
+
+> saved as snapshot 1
+
+> ok
+
+> saved as snapshot 2
+
+> ok
+
+> a [1 2 3]
+
+> ok
+
+> b[1 2]
+a[1 2 3]
+
+> bye

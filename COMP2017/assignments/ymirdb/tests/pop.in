@@ -1,0 +1,18 @@
+set a 1 2 3
+set b 9 8 7
+pop a
+pop a
+pop a
+list entries
+pop a
+pop a
+pop a
+list entries
+pop b
+pop b
+pop b
+list entries
+pop b
+list entries
+list keys
+bye

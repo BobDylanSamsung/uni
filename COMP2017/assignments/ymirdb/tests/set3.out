@@ -1,0 +1,23 @@
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+g [f]
+f [4 e 5]
+e [a b c d]
+d [a]
+c [b]
+b [a]
+a [0]
+
+bye

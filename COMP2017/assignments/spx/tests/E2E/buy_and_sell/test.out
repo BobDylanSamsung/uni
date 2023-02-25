@@ -1,0 +1,137 @@
+[SPX] Starting
+[SPX] Trading 4 products: Beetles Queen NWA Elvis
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Starting trader 0 (tests/E2E/buy_and_sell/trader)
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] [T0] Parsing command: <BUY 0 BEETLES 10 2>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 0
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 1 Queen 40 1234>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <BUY 2 elvis 13 12345>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 3 BEETLES 999999 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 1
+[SPX]		SELL 999999 @ $10 (1 order)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 4 beetles 29292 45>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 999999 @ $10 (1 order)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 5 beetles 1010 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 1001009 @ $10 (2 orders)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <BUY 6 NWA 190 90000>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 1001009 @ $10 (2 orders)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 190 @ $90000 (1 order)
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <buy 7 NWA 240 90000>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 1001009 @ $10 (2 orders)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 430 @ $90000 (2 orders)
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <sell 8 elvis 13 999999>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 1001009 @ $10 (2 orders)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 430 @ $90000 (2 orders)
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 1
+[SPX]		SELL 13 @ $999999 (1 order)
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <buy 9 NWA 999999 999999>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 2
+[SPX]		SELL 29292 @ $45 (1 order)
+[SPX]		SELL 1001009 @ $10 (2 orders)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 2; Sell levels: 0
+[SPX]		BUY 999999 @ $999999 (1 order)
+[SPX]		BUY 430 @ $90000 (2 orders)
+[SPX]	Product: Elvis; Buy levels: 1; Sell levels: 1
+[SPX]		SELL 13 @ $999999 (1 order)
+[SPX]		BUY 13 @ $12345 (1 order)
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $0

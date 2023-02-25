@@ -1,0 +1,6 @@
+set a 1 2 3
+set b 1 2 a
+set c b
+list keys
+list entries
+bye

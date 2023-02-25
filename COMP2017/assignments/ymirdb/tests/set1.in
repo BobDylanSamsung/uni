@@ -1,0 +1,5 @@
+set a 1 2 3
+set b 4 5 6
+set c 8 2 3
+list entries
+bye

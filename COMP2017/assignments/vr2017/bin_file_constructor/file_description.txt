@@ -1,0 +1,7 @@
+03: only a trailer
+04: trailer, 2 x valid packet, trailer
+05: 2 x valid packet, trailer
+06: lots of the same packets in multiple chunks
+07: 127 packets and a trailer
+08: 128 packets and a trailer
+09: trailer 128 packets trailer

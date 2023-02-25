@@ -1,0 +1,50 @@
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+e [d a c b]
+d [a b c]
+c [b a]
+b [1 a 3]
+a [1 2 3]
+
+not permitted
+
+e [d a c b]
+d [a b c]
+c [b a]
+b [1 a 3]
+a [1 2 3]
+
+ok
+
+ok
+
+c [b a]
+b [1 a 3]
+a [1 2 3]
+
+not permitted
+
+not permitted
+
+ok
+
+b [1 a 3]
+a [1 2 3]
+
+not permitted
+
+ok
+
+ok
+
+no entries
+
+bye

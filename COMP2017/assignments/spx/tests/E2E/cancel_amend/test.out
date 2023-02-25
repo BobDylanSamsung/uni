@@ -1,0 +1,254 @@
+[SPX] Starting
+[SPX] Trading 10 products: a b c d e f g h i j
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Starting trader 0 (tests/E2E/cancel_amend/trader)
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] [T0] Parsing command: <BUY 0 a 10 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 0
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <buy 1 c 5 5>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 5 @ $5 (1 order)
+[SPX]	Product: d; Buy levels: 0; Sell levels: 0
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <sell 2 d 100 150>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $10 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 5 @ $5 (1 order)
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $150 (1 order)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <amend 0 20 25>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 5 @ $5 (1 order)
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $150 (1 order)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <cancel 1>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $150 (1 order)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <sell 3 f 1 1>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $150 (1 order)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 1 @ $1 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 0; Sell levels: 0
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <buy 4 i 6 9>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 100 @ $150 (1 order)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 1 @ $1 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 6 @ $9 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <sell 5 d 4 150>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 1 @ $1 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 6 @ $9 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <cancel 3>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 0
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 6 @ $9 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <sell 6 f 70 70>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 70 @ $70 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 6 @ $9 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <sell 7 f 100 100>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 2
+[SPX]		SELL 100 @ $100 (1 order)
+[SPX]		SELL 70 @ $70 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 6 @ $9 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <amend 4 69 420>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 2
+[SPX]		SELL 100 @ $100 (1 order)
+[SPX]		SELL 70 @ $70 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 69 @ $420 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <amend 7 31 70>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 101 @ $70 (2 orders)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 69 @ $420 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] [T0] Parsing command: <amend 6 5 5>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: a; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 20 @ $25 (1 order)
+[SPX]	Product: b; Buy levels: 0; Sell levels: 0
+[SPX]	Product: c; Buy levels: 0; Sell levels: 0
+[SPX]	Product: d; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 104 @ $150 (2 orders)
+[SPX]	Product: e; Buy levels: 0; Sell levels: 0
+[SPX]	Product: f; Buy levels: 0; Sell levels: 2
+[SPX]		SELL 31 @ $70 (1 order)
+[SPX]		SELL 5 @ $5 (1 order)
+[SPX]	Product: g; Buy levels: 0; Sell levels: 0
+[SPX]	Product: h; Buy levels: 0; Sell levels: 0
+[SPX]	Product: i; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 69 @ $420 (1 order)
+[SPX]	Product: j; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: a 0 ($0), b 0 ($0), c 0 ($0), d 0 ($0), e 0 ($0), f 0 ($0), g 0 ($0), h 0 ($0), i 0 ($0), j 0 ($0)
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $0

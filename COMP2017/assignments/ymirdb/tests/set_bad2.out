@@ -1,0 +1,17 @@
+key not valid
+
+ok
+
+a [1 2 3]
+
+ok
+
+b [a]
+a [4 4 5]
+
+no such key
+
+b [a]
+a [4 4 5]
+
+bye

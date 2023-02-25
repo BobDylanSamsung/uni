@@ -1,0 +1,11 @@
+set a 1 2 3
+set b a
+set c b a
+set d    
+pluck c 0
+pluck c 2
+pluck d 1
+pluck e 1
+pluck 1a 1
+list entries
+bye

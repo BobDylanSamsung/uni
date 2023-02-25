@@ -1,0 +1,28 @@
+set a 1 2 3
+set b 4 5 6
+set c 9 8 7
+push b a
+append c 1 a 2 b 3
+list entries
+pop a
+pop b
+pop c
+list entries
+pop a
+pop b
+pop c
+pop a
+pop b
+pop c
+pop a
+pop b
+pop c
+pop a
+pop b
+pop c
+pop c
+pop c
+pop c
+pop c
+list entries
+bye

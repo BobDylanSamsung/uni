@@ -1,0 +1,10 @@
+set a 1 2 3
+set b a
+pop c
+pop d
+pop a
+pop b
+pop b
+pop 1a
+list entries
+bye

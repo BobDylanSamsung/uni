@@ -1,0 +1,22 @@
+set a 1 2 3
+type a
+set b 1 2 3
+type b
+set b a
+type b
+pop b
+type b
+set c a b
+type c
+pop c
+pop c
+type c
+append c a b
+type c
+pop c
+pop c
+push c 1 2 3
+type c
+push c a
+type c
+bye

@@ -1,0 +1,52 @@
+[SPX] Starting
+[SPX] Trading 4 products: Beetles Queen NWA Elvis
+[SPX] Created FIFO /tmp/spx_exchange_0
+[SPX] Created FIFO /tmp/spx_trader_0
+[SPX] Starting trader 0 (tests/E2E/errors2/trader)
+[SPX] Connected to /tmp/spx_exchange_0
+[SPX] Connected to /tmp/spx_trader_0
+[SPX] [T0] Parsing command: <BUY 0 BEETLES 10 2>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 0
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 1 Queen 40 1234>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 0
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <BUY 10 elvis 13 12345>
+[SPX] [T0] Parsing command: <SEL 2 BEETLES 999999 10>
+[SPX] [T0] Parsing command: <SELL 2 BEETLES 999999 10>
+[SPX]	--ORDERBOOK--
+[SPX]	Product: Beetles; Buy levels: 1; Sell levels: 1
+[SPX]		SELL 999999 @ $10 (1 order)
+[SPX]		BUY 10 @ $2 (1 order)
+[SPX]	Product: Queen; Buy levels: 0; Sell levels: 1
+[SPX]		SELL 40 @ $1234 (1 order)
+[SPX]	Product: NWA; Buy levels: 0; Sell levels: 0
+[SPX]	Product: Elvis; Buy levels: 0; Sell levels: 0
+[SPX]	--POSITIONS--
+[SPX]	Trader 0: Beetles 0 ($0), Queen 0 ($0), NWA 0 ($0), Elvis 0 ($0)
+[SPX] [T0] Parsing command: <SELL 3 beatles 29292 45>
+[SPX] [T0] Parsing command: <BUY 3 NWA 190 1000000>
+[SPX] [T0] Parsing command: <sell 3 elvis 1000000 999999>
+[SPX] [T0] Parsing command: <amend 3 elvis 13 999999>
+[SPX] [T0] Parsing command: <cancel>
+[SPX] [T0] Parsing command: <sell>
+[SPX] [T0] Parsing command: <amend>
+[SPX] [T0] Parsing command: <amend 1 0 4>
+[SPX] [T0] Parsing command: <amend 1 9999 -50>
+[SPX] [T0] Parsing command: <cancel 4>
+[SPX] Trader 0 disconnected
+[SPX] Trading completed
+[SPX] Exchange fees collected: $0

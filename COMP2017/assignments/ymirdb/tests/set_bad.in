@@ -1,0 +1,6 @@
+set a       
+list entries
+set a 1 2 3
+set a b
+list entries
+bye

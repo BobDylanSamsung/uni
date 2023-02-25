@@ -1,0 +1,10 @@
+set 12a 1 2 3
+set a 1 2 3
+list entries
+set a 4 4 5
+list entries
+set b a
+list entries
+set b 1 2 c
+list entries
+bye

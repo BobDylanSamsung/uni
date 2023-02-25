@@ -1,0 +1,11 @@
+set a 1 2 3
+set b 4 5 6
+set c 9 8 7 0
+list entries
+del c
+list entries
+del a
+list entries
+del b
+list entries
+bye

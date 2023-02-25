@@ -1,0 +1,9 @@
+set a     
+get a
+push a     
+get a
+push a 1
+set b 1 2 3
+push b     
+list entries
+bye

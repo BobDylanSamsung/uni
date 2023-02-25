@@ -1,0 +1,9 @@
+set a 0
+set b a
+set c b
+set d a
+set e a b c d
+set f 4 e 5
+set g f
+list entries
+bye

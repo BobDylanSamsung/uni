@@ -1,0 +1,23 @@
+set a 1 2 3
+set b 4 5 6
+set c 9 8 7 0
+set d 0
+push b a
+append c b 2 a
+push d a c
+list entries
+forward a
+forward b
+forward c
+forward d
+backward a
+backward b
+backward c
+backward d
+del d
+list entries
+pluck c 5
+forward c
+backward b
+backward a
+bye

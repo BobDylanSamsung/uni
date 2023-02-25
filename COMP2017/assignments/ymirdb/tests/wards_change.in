@@ -1,0 +1,39 @@
+set a 1 2 3
+set b 1 a 2
+set c a b
+set d a b c
+set e 1 d 2 a 3 c 4 b 5
+forward e
+pluck e 2
+pluck e 5
+list entries
+forward e
+backward a
+del e
+list entries
+forward a
+forward b
+forward c
+forward d
+backward a
+backward b
+backward c
+backward d
+set c 1 2 3 4
+list entries
+forward a
+forward b
+forward c
+forward d
+backward a
+backward b
+backward c
+backward d
+del d
+del b
+list entries
+forward a
+forward c
+backward a
+backward c
+bye

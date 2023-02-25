@@ -1,0 +1,27 @@
+set a 1 2 3
+set b 1 a 2
+forward a
+backward a
+forward b
+backward b
+set c a b
+forward a
+backward a
+forward b
+backward b
+forward c
+backward c
+set d a b c
+set e 1 d 2 a 3 c 4 b 5
+list entries
+forward a
+backward a
+forward b
+backward b
+forward c
+backward c
+forward d
+backward d
+forward e
+backward e
+bye

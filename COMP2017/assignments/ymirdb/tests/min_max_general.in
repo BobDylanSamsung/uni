@@ -1,0 +1,22 @@
+set a 1 2 3 4 5 6
+set b 3 2 5 4 1 7
+set c -1 9 3 0 4
+set d a b c
+set e a 0 b 10 c -2 d
+list entries
+min a
+max a
+push a b
+get a
+min a
+max a
+push b c
+get b
+min a
+max a
+min d
+max d
+min e
+max e
+list keys
+bye

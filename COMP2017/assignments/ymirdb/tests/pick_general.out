@@ -1,0 +1,43 @@
+ok
+
+ok
+
+ok
+
+ok
+
+1
+
+2
+
+3
+
+a
+
+index out of range
+
+index out of range
+
+b
+
+index out of range
+
+index out of range
+
+a
+
+b
+
+c
+
+d
+c
+b
+a
+
+d [a b c]
+c [a b]
+b [a]
+a [1 2 3]
+
+bye

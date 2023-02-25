@@ -1,0 +1,48 @@
+ok
+
+saved as snapshot 1
+
+ok
+
+saved as snapshot 2
+
+ok
+
+saved as snapshot 3
+
+3
+2
+1
+
+c [a b]
+b [1 a 2]
+a [1 2 3]
+
+ok
+
+3
+2
+1
+
+a [1 2 3]
+
+ok
+
+ok
+
+b [1 2 3]
+
+ok
+
+b [1 a 2]
+a [1 2 3]
+
+ok
+
+ok
+
+c [a b]
+b [1 a 2]
+a [1 2 3]
+
+bye

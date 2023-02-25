@@ -1,0 +1,88 @@
+ok
+
+ok
+
+ok
+
+ok
+
+ok
+
+a, b, c, d
+
+d
+
+c
+
+e [1 2 a 3 4 b 5]
+d [a b c]
+c [a b]
+b [1 a 2]
+a [1 2 3]
+
+a, b
+
+b, c, d, e
+
+ok
+
+d [a b c]
+c [a b]
+b [1 a 2]
+a [1 2 3]
+
+nil
+
+a
+
+a, b
+
+a, b, c
+
+b, c, d
+
+c, d
+
+d
+
+nil
+
+ok
+
+d [a b c]
+c [1 2 3 4]
+b [1 a 2]
+a [1 2 3]
+
+nil
+
+a
+
+nil
+
+a, b, c
+
+b, d
+
+d
+
+d
+
+nil
+
+ok
+
+ok
+
+c [1 2 3 4]
+a [1 2 3]
+
+nil
+
+nil
+
+nil
+
+nil
+
+bye
