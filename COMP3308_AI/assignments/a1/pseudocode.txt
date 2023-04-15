@@ -1,0 +1,3 @@
+dfs():
+    decode the message
+    add key to path
