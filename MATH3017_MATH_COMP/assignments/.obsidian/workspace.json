@@ -1,49 +1,48 @@
 {
   "main": {
-    "id": "c8e5c5f08666fe31",
+    "id": "ff6083cf9e62c50b",
     "type": "split",
     "children": [
       {
-        "id": "d4cee79c12d72f3e",
+        "id": "9ad7a8cdd028a253",
         "type": "tabs",
         "children": [
           {
-            "id": "3c1cc66b6a2eae6f",
+            "id": "43243058c11e9fa7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "a0edf55bca1f888c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MATH3066 A2 500468777.md",
+                "file": "a3/500468777 MATH3076 A3.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "de45272627783c21",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "MATH3066 A2 500468777.pdf"
-              }
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "7d386ebc158f1aab",
+    "id": "60a96486affe6392",
     "type": "split",
     "children": [
       {
-        "id": "4df098b878c116e0",
+        "id": "03b7973aa28827d5",
         "type": "tabs",
         "children": [
           {
-            "id": "0fa04428834bd218",
+            "id": "e889b43eac5ba615",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -53,7 +52,7 @@
             }
           },
           {
-            "id": "c2af3adfd1315420",
+            "id": "c6db45831b75fea1",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -68,15 +67,7 @@
             }
           },
           {
-            "id": "41617adf414b319f",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "b263d94a019a97ad",
+            "id": "eb5d34f575e4ff51",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -90,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "c7687b6c6df8f508",
+    "id": "dd673a13e5ac7c09",
     "type": "split",
     "children": [
       {
-        "id": "c88463bddee281c6",
+        "id": "9fe79e767e5e0519",
         "type": "tabs",
         "children": [
           {
-            "id": "01b337b3192a84b3",
+            "id": "31174ed0722de4ce",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH3066 A2 500468777.md",
+                "file": "a3/500468777 MATH3076 A3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,19 +106,19 @@
             }
           },
           {
-            "id": "72e65f68256eba88",
+            "id": "f46e98bf384c976f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH3066 A2 500468777.md",
+                "file": "a3/500468777 MATH3076 A3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "ea074e9b6fbca900",
+            "id": "c2e959006e2936a7",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -138,29 +129,21 @@
             }
           },
           {
-            "id": "5f78b3a678ede7aa",
+            "id": "49875f9e93252943",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH3066 A2 500468777.md"
+                "file": "a3/500468777 MATH3076 A3.md"
               }
             }
-          },
-          {
-            "id": "6613c2702793fbf9",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -169,18 +152,12 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:Open command palette": false
     }
   },
-  "active": "3c1cc66b6a2eae6f",
+  "active": "a0edf55bca1f888c",
   "lastOpenFiles": [
-    "A4.pdf",
-    "MATH3066 A2 500468777.pdf",
-    "MATH3066 A2 500468777.md",
-    "MATH3066 A1 500468777.md",
-    "MATH3066 A1 500468777.pdf",
-    "Untitled.canvas",
-    "Untitled"
+    "a3",
+    "a3/500468777 MATH3076 A3.md"
   ]
 }
