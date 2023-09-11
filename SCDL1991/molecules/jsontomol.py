@@ -1,5 +1,5 @@
 import json
-name="bromochloroflouromethane"
+name="2flourobutane/flourobutane_s"
 with open(f"{name}.json", "r") as f:
     mol = json.load(f)
 
